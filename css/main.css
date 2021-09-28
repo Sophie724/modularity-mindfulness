@@ -19,9 +19,15 @@ html {
 
 body {
   margin: 0;
+  display: grid;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+section {
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
 }
