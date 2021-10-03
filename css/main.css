@@ -23,10 +23,6 @@ img {
   height: inherit;
 }
 
-header {
-
-}
-
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -37,13 +33,9 @@ li {
   list-style-type: none;
 }
 
-a{
+a {
   color: #3783a3;
   font-size: 1.125rem;
-}
-
-span {
-  font-size: 1rem;
 }
 
 main div {
@@ -68,14 +60,15 @@ main img {
 .introduction {
   padding-top: .5rem;
 }
+
 h1 {
   padding-left: 6rem;
   margin-top: 1rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 h2 {
-  margin: 1rem 0 0 0;
+  margin: 1rem 0 0;
 }
 
 h3 {
@@ -89,24 +82,21 @@ article a {
   margin-top: 1rem;
   font-size: 1rem;
   text-decoration: none;
-  border: .2rem solid #AFCDDA;
+  border: .2rem solid #afcdda;
   border-radius: .3rem;
   padding: .5em 1em .6em;
 }
 
-.button2{
+.button2 {
   margin-top: .2rem;
 }
 
-.button3{
+.button3 {
   margin-top: 1rem;
 }
 
 article p {
   margin-top: 1.125rem;
-}
-section {
-  padding: 0 .5rem;
 }
 
 section a {
@@ -126,6 +116,7 @@ span {
 
 section {
   margin-bottom: .5rem;
+  padding: 0 .5rem;
 }
 
 body {
@@ -137,9 +128,9 @@ body {
   body {
     display: grid;
     grid-template-areas:
-    "banner banner banner"
-    "main main main"
-    "footer footer footer";
+      "banner banner banner"
+      "main main main"
+      "footer footer footer";
     margin-bottom: 1rem;
   }
 
@@ -152,13 +143,13 @@ body {
     margin-right: 0;
     float: left;
     margin-top: .5rem;
-    margin-left: 0rem;
+    margin-left: 0;
     margin-bottom: 1rem;
     padding-left: .5rem;
   }
 
   h2 {
-    margin: .6rem 0 0 0;
+    margin: .6rem 0 0;
   }
 
   nav {
@@ -169,11 +160,6 @@ body {
   nav ul {
     margin: 0;
     padding: 0 1rem;
-  }
-
-  .introduction {
-    padding-bottom: 1.5rem;
-    padding-top: 1rem;
   }
 
   .introduction p {
@@ -190,6 +176,7 @@ body {
   .introduction {
     text-align: center;
     padding-bottom: .8rem;
+    padding-top: 1rem;
   }
 
   main {
@@ -215,7 +202,7 @@ body {
 
   footer {
     grid-area: footer;
-    padding-bottom: 0rem;
+    padding-bottom: 0;
   }
 
   .column {
@@ -236,24 +223,27 @@ body {
   .column img {
     margin-top: 0;
   }
-  .button2{
+
+  .button2 {
     margin-top: 2.5rem;
   }
 
-  .button3{
+  .button3 {
     margin-top: 2.5rem;
   }
 
   span {
     font-size: 1rem;
   }
+
 }
 
 @media only screen and (min-width: 62.5em) {
 
-  .button1{
+  .button1 {
     margin-top: 2.5rem;
   }
+
   .introduction p {
     margin-bottom: 2.8rem;
   }
