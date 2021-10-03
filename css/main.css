@@ -4,6 +4,7 @@ html {
   text-size-adjust: 100%;
   font-family: "Noto Sans", sans-serif;
   line-height: 1.5;
+  margin: 0;
 }
 
 *,
@@ -17,17 +18,248 @@ html {
   font-style: normal;
 }
 
-body {
-  margin: 0;
-  display: grid;
+img {
+  width: 100%;
+  height: inherit;
 }
 
-img {
-  display: block;
+header {
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a{
+  color: #3783a3;
+  font-size: 1.125rem;
+}
+
+span {
+  font-size: 1rem;
+}
+
+main div {
+  border-bottom: .2rem solid #e2e2e2;
+  border-top: .2rem solid #e2e2e2;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+main img {
+  margin-bottom: .3rem;
+}
+
+.introduction i {
+  font-size: 2rem;
+}
+
+.introduction p {
+  margin: 1rem 0 1.2rem;
+}
+
+.introduction {
+  padding-top: .5rem;
+}
+h1 {
+  padding-left: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  margin: 1rem 0 0 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+article a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border: .2rem solid #AFCDDA;
+  border-radius: .3rem;
+  padding: .5em 1em .6em;
+}
+
+.button2{
+  margin-top: .2rem;
+}
+
+.button3{
+  margin-top: 1rem;
+}
+
+article p {
+  margin-top: 1.125rem;
+}
+section {
+  padding: 0 .5rem;
+}
+
+section a {
   width: 100%;
 }
 
+footer {
+  border-top: .2rem solid #e2e2e2;
+  font-size: .8rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+span {
+  font-size: 1rem;
+}
+
 section {
-    display: flex;
+  margin-bottom: .5rem;
+}
+
+body {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 38em) {
+
+  body {
+    display: grid;
+    grid-template-areas:
+    "banner banner banner"
+    "main main main"
+    "footer footer footer";
+    margin-bottom: 1rem;
+  }
+
+  header {
+    grid-area: banner;
+  }
+
+  h1 {
+    width: 238px;
+    margin-right: 0;
+    float: left;
+    margin-top: .5rem;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    padding-left: .5rem;
+  }
+
+  h2 {
+    margin: .6rem 0 0 0;
+  }
+
+  nav {
+    float: right;
+    margin-top: 2rem;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .introduction {
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .introduction p {
+    text-align: center;
+    padding-left: 2.5rem;
+  }
+
+  .introduction i {
+    padding-left: 3rem;
+    padding-right: 10rem;
+    margin-right: 5rem;
+  }
+
+  .introduction {
+    text-align: center;
+    padding-bottom: .8rem;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  main section {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.05rem;
+  }
+
+  main > img {
+    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    width: 98%;
+  }
+
+  section img {
+    margin-top: .125rem;
+  }
+
+  footer {
+    grid-area: footer;
+    padding-bottom: 0rem;
+  }
+
+  .column {
+    display: flex;
+  }
+
+  .column article {
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .column p {
+    flex-grow: 1;
+  }
+
+  .column img {
+    margin-top: 0;
+  }
+  .button2{
+    margin-top: 2.5rem;
+  }
+
+  .button3{
+    margin-top: 2.5rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 62.5em) {
+
+  .button1{
+    margin-top: 2.5rem;
+  }
+  .introduction p {
+    margin-bottom: 2.8rem;
+  }
+
+  article p {
+    align-items: center;
+  }
+
 }
